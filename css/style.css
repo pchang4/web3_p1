@@ -1,0 +1,29 @@
+/* Presentation
+* CSS : https://cssreference.io
+*/
+#app {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-item: center;
+  background-color: #CC0000
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 18vw;
+  margin: 5%;
+  padding-bottom: 10%;
+  background-color: white;
+}
+
+.cardimg{
+  height: 8vw;
+}
+
+.name {
+  text-transform: capitalize;
+  font-size: 3rem;
+}
