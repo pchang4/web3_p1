@@ -1,6 +1,4 @@
-/* Presentation
-* CSS : https://cssreference.io
-*/
+
 #app {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -23,7 +21,7 @@
   height: 8vw;
 }
 
-.name {
+.card h1{
   text-transform: capitalize;
-  font-size: 3rem;
+  font-size: 2vw;
 }
