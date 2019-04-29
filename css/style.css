@@ -1,9 +1,8 @@
-
 #app {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-item: center;
-  background-color: #CC0000
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  background-color: darkred;
 }
 
 .card {
@@ -11,17 +10,38 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 18vw;
+  height: 30vw;
   margin: 5%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background-color: white;
+  border-radius: 50px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .cardimg{
-  height: 8vw;
+  height: 15vw;
 }
 
-.card h1{
+.name {
   text-transform: capitalize;
-  font-size: 2vw;
+  font-size: 2.5vw;
+}
+
+.id {
+  font-size: 1.5vw;
+}
+
+.types{
+  display: flex;
+  justify-content: center;
+}
+
+.types h2 {
+   font-size: 1vw;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding: 1vw;
+  border: 3px solid black; 
+  border-radius: 25px;
 }
