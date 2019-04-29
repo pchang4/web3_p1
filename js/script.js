@@ -1,11 +1,10 @@
-// REF: https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/
 
 /**********************************
   CONFIGURE JSON CALL
 **********************************/
 
 
-for (i = 0; i < 26; i++) {
+for (i = 0; i < 100; i++) {
   // The API feed
   let getStuff = 'https://pokeapi.co/api/v2/pokemon/' + i;
 
@@ -20,10 +19,13 @@ for (i = 0; i < 26; i++) {
 
     //   Template
     const template = `<div class="card">
-                        <img class="cardimg" src="${data.sprites.front_default}">
-                        <h1> ID #${data.id} </h1>
-                        <h1 class="name"> ${data.name} </h1>
-                       </div>`;
+    <img class="cardimg" src="${data.sprites.front_default}">
+    <h1 class="id"> ID #${data.id} </h1>
+    <div class="types">
+<h2> ${data.types[0].type.name} </h2>
+<h2> ${data.types[1].type.name} </h2></div>
+    <h1 class="name"> ${data.name} </h1>
+   </div>`;  
 
     $('#app').append(template);
   };
